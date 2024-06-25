@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color1: #fff;
+  --font1: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font1);
+  background-image: linear-gradient(
+    to left,
+    rgba(248, 174, 174, 0.301),
+    rgba(226, 226, 142, 0.384),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#header-container {
+  background-color: #012207;
+  padding: 10px;
+}
+
+#choice {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#choice a {
+  color: #afd6b7;
+}
+
+#choice a:hover {
+  color: #fff;
+}
+
+#titulo {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 4rem 0;
+}
+
+#texto {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  background-color: #afd6b7;
+  max-width: 800px;
+  box-shadow: 2px 2px 2px black;
+  border: 1px solid black;
+}
+
+#texto p {
+  font-size: 1.2rem;
+  text-indent: 20px;
+  text-align: left;
+  text-justify: right;
+  padding: 1.5rem;
+  line-height: 2rem;
+}
+
+.fotos {
+  display: block;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+/* SEPARADOR */
+.separator {
+  position: relative;
+}
+
+.line {
+  border-top: 1px solid black;
+  max-width: 1000px;
+  margin: 25px auto 35px;
+}
+
+.separator span {
+  position: absolute;
+  text-transform: uppercase;
+  color: black;
+  background-color: #afd6b7;
+  top: -7px;
+  width: 200px;
+  margin-left: -102px;
+  font-size: 14px;
+}
+
+#leao,
+#leopardo,
+#elefante,
+#rinoceronte,
+#bufalo {
+  max-width: 1000px;
+  max-height: 750px;
+}
+
+.fotos p {
+  padding: 1.5rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+.voltar {
+  margin-top: 20px;
+}
+
+.voltar a {
+  background-color: #012207;
+  padding: 10px 25px;
+  color: #afd6b7;
+}
+
+.voltar a:hover {
+  color: #fff;
+}
+
+.separator a {
+  position: absolute;
+  padding: 5px;
+  text-transform: uppercase;
+  color: #afd6b7;
+  background-color: #012207;
+  top: -13px;
+  width: 300px;
+  margin-left: -149px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #titulo {
+    font-size: 1.2rem;
+  }
+  #texto {
+    max-width: 600px;
+  }
+  #leao,
+  #leopardo,
+  #elefante,
+  #rinoceronte,
+  #bufalo {
+    max-width: 750px;
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 425px) {
+  #choice {
+    display: none;
+  }
+
+  #titulo h1 {
+    font-size: 1.6rem;
+  }
+
+  #texto {
+    max-width: 350px;
+    font-size: .9rem;
+  }
+
+  #texto p {
+    font-size: 0.8rem;
+  }
+  #leao,
+  #leopardo,
+  #elefante,
+  #rinoceronte,
+  #bufalo {
+    max-width: 350px;
+    max-height: 300px;
+  }
+
+  .fotos p {
+    font-size: 0.9rem;
+    max-width: 350px;
+  }
+
+  #video iframe {
+    width: 350px;
+    height: 180px;
+  }
+  .voltar {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #choice {
+    display: none;
+  }
+
+  #titulo h1 {
+    font-size: 1.6rem;
+  }
+  #texto {
+    max-width: 350px;
+  }
+
+  #texto p {
+    font-size: 0.8rem;
+  }
+  #leao,
+  #leopardo,
+  #elefante,
+  #rinoceronte,
+  #bufalo {
+    max-width: 350px;
+    max-height: 250px;
+  }
+
+  .fotos p {
+    font-size: 0.8rem;
+    max-width: 350px;
+  }
+
+  #video iframe {
+    width: 350px;
+    height: 180px;
+  }
+
+  .voltar {
+    display: none;
+  }
+}
