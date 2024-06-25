@@ -140,7 +140,7 @@ body {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #titulo {
     font-size: 1.2rem;
   }
@@ -157,7 +157,7 @@ body {
   }
 }
 
-@media (min-width: 400px) {
+@media (max-width: 768px) {
   #choice {
     display: none;
   }
