@@ -157,7 +157,7 @@ body {
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 625px) {
   #choice {
     display: none;
   }
